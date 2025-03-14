@@ -1,0 +1,8 @@
+board:
+  name: tempo_bt
+  vendor: Riley_Rainey
+  socs:
+  - name: 'nrf5340'
+    variants:
+    - name: 'ns'
+      cpucluster: 'cpuapp'
