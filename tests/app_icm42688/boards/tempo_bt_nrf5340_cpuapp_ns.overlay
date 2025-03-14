@@ -1,0 +1,18 @@
+/*
+ * Copyright (c) 2025 Riley Rainey
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+&spi4 {
+	compatible = "nordic,nrf-spim";
+	status = "okay";
+	icm42688@0 {
+		status = "okay";
+		compatible = "invensense,icm42688";
+		spi-max-frequency = <24000000>;
+		reg = <0>;
+		int-gpios = <&gpio1 07 GPIO_ACTIVE_HIGH>;
+	};
+};
+
